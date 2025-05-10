@@ -1,0 +1,83 @@
+{
+  "name": "@julienbenac/ally-orange",
+  "description": "Orange driver for AdonisJS Ally",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "prebuild": "npm run format && npm run lint:fix",
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "release": "npx release-it",
+    "taze": "npx taze"
+  },
+  "homepage": "https://github.com/julienbenac/ally-orange#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienbenac/ally-orange.git"
+  },
+  "devDependencies": {
+    "@adonisjs/assembler": "^7.8.2",
+    "@adonisjs/eslint-config": "^2.0.0",
+    "@adonisjs/prettier-config": "^1.4.4",
+    "@adonisjs/tsconfig": "^1.4.0",
+    "@swc/core": "^1.11.24",
+    "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "release-it": "^19.0.2",
+    "taze": "^19.1.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@poppinss/utils": "^6.9.3"
+  },
+  "peerDependencies": {
+    "@adonisjs/ally": "^5.1.0",
+    "@adonisjs/core": "^6.17.2"
+  },
+  "author": "Julien Benac <contact@julienbenac.fr>",
+  "license": "MIT",
+  "keywords": [
+    "adonisjs",
+    "ally",
+    "orange",
+    "oauth2",
+    "openid"
+  ],
+  "prettier": "@adonisjs/prettier-config",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): ${version}",
+      "tagAnnotation": "v${version}",
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}",
+      "web": true
+    }
+  }
+}
