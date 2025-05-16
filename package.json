@@ -38,13 +38,13 @@
     "@adonisjs/prettier-config": "^1.4.4",
     "@adonisjs/tsconfig": "^1.4.0",
     "@swc/core": "^1.11.24",
-    "@types/node": "^22.15.17",
+    "@types/node": "^22.15.18",
     "eslint": "^9.26.0",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "release-it": "^19.0.2",
     "taze": "^19.1.0",
-    "tsup": "^8.4.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
@@ -52,7 +52,7 @@
   },
   "peerDependencies": {
     "@adonisjs/ally": "^5.1.0",
-    "@adonisjs/core": "^6.17.2"
+    "@adonisjs/core": "^6.18.0"
   },
   "author": "Julien Benac <contact@julienbenac.fr>",
   "license": "MIT",
