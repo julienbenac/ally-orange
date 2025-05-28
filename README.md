@@ -66,6 +66,7 @@ router.get('/orange', ({ response }) => {
 })
 
 router.get('/orange/redirect', ({ ally }) => {
+  // You can use or override default scopes
   return ally.use('orange').redirect()
 })
 
