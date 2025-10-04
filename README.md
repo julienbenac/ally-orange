@@ -24,9 +24,41 @@ node ace add @adonisjs/ally
 
 After going through the first step, you can now download the `@julienbenac/ally-orange` package.
 
+<details open>
+  <summary><strong>📦 Using npm</strong></summary>
+
 ```bash
 npm install @julienbenac/ally-orange
 ```
+
+</details>
+
+<details>
+  <summary><strong>🚀 Using pnpm</strong></summary>
+
+```bash
+pnpm add @julienbenac/ally-orange
+```
+
+</details>
+
+<details>
+  <summary><strong>🧶 Using yarn</strong></summary>
+
+```bash
+yarn add @julienbenac/ally-orange
+```
+
+</details>
+
+<details>
+  <summary><strong>🥟 Using bun</strong></summary>
+
+```bash
+bun add @julienbenac/ally-orange
+```
+
+</details>
 
 ### Usage
 
